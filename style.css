@@ -1,11 +1,21 @@
+/* General resets and settings */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
 }
 
+/* Container for centering content */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header styling */
 header {
     background: #333;
     color: #fff;
@@ -20,6 +30,7 @@ header h1 {
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -30,16 +41,32 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+/* Main content styling */
 main {
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
+/* Section styling */
 section {
+    background: #fff;
+    padding: 2rem;
     margin-bottom: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+section h2 {
+    margin-top: 0;
+}
+
+/* Footer styling */
 footer {
     text-align: center;
     padding: 1rem 0;
@@ -48,4 +75,17 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
 }
